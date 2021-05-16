@@ -2,8 +2,7 @@ import requests
 import json
 import datetime
 
-url = 'https://api.openweathermap.org/data/2.5/onecall?lat=59.8944&lon=30.2642&exclude=current,' \
-      'minutely,hourly,daily,alerts&appid=b9a5a7780bc2117005f9de67981b3887&units=metric'
+url = 'https://api.openweathermap.org/data/2.5/onecall?lat=59.8944&lon=30.2642&exclude=current,minutely,hourly,daily,alerts&appid=b9a5a7780bc2117005f9de67981b3887&units=metric'
 json_data = requests.get(url).json()
 
 
